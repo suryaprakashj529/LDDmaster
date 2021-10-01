@@ -1,0 +1,25 @@
+--> linux supports dynamic insertion and removal of code from the kernel while the system is up and running. the code what we remove and insert at run time is called a Kernel module.
+
+--> once Linux Kernel module is loaded into kernel, we can use all features exposed by the linux kernel module with out even restart of a system.
+
+--> LKM extends functionality of the kernel by introducing new features to the kernel like security,device drivers, filesystem drivers,systemcalls etc..
+
+--> it helps for embedded linux systems to have only minimal kernel image and optional drivers to load when required.
+
+--> when hot-pluggable device like usb is connected .. it will load driver to support.
+
+Device driver is an example for this LKMS
+*************************************************************
+Two types of LKM
+
+1) static(y) -- staticaly linked to kernel and part of image and cannot be unloaded
+
+2) Dynamic(m) -- not built into kernel image , compiled and linked separately to produce .ko files. we can load and unload these.
+
+
+
+
+
+
+
+

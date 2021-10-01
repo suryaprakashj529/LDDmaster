@@ -1,0 +1,48 @@
+
+                      ****************
+              *********     CPU      *********
+     **********       *              *       ***********
+     * USER SP*       ****************       * Kernel  *
+     **********                              ***********          
+User Space:
+      --> Restricted Mode
+      --> User level programs (applcations) -- these cannot access h/w or o/s related subsystems.
+
+Kernel Space:
+       --> Priviliged mode
+       --> Kernel level code
+       --> Linux kernel,subsystems and LKM
+kernel level code can access memeory, peripherals, etc..
+
+
+                          Applications
+                             \\
+                       System Call Interface
+                             \\
+
+process        Memeory       Filesystems     Devctrl     N/w
+Management     Management    
+                             \\
+
+Concurrency   Virtual    Files and dirs  Ttys%Dev   Connectivity
+Multitasking  memory     The VFS
+
+                              \\
+
+Arch-dep code  Memory  File System     Character   N/w Subsstem
+               Manager type & blk dev   Devices    IF drices
+
+
+                              \\
+
+CPU       Memory          Disks       Consoles   N/w Intrfcs 
+
+
+
+
+
+USer Space-- Applications and systemcall interfaces
+\\
+Kernel Space --> Kernel Subsystem and Kernel Services and Deivce Drivers
+\\
+Hardware Space --> CPU,memory,FS types,block devices,Disks
